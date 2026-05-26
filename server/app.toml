@@ -1,0 +1,35 @@
+[app]
+name = "cmdb-server"
+port = "8080"
+mode = "release"
+
+[mysql]
+host = "192.168.1.111"
+port = 3306
+username = "root"
+password = "crazy8889"
+db = "cmdb"
+charset = "utf8mb4"
+parse_time = true
+loc = "Local"
+max_idle_conns = 10
+max_open_conns = 50
+conn_max_lifetime_minutes = 60
+
+[redis]
+addr = "192.168.1.111:6379"
+password = "123"
+db = 0
+
+[auth]
+secret = "change-me-to-a-strong-secret-key"
+session_ttl_hours = 12
+
+[log]
+level = "info"
+filename = "logs/app.log"
+max_size = 20
+max_backups = 10
+max_age = 30
+compress = true
+console = true
