@@ -110,3 +110,6 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## 页面图片
+![alt text](image.png)
